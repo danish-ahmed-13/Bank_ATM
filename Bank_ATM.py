@@ -31,7 +31,7 @@ class Account:
 
 class ATM:
     def __init__(self):
-        self.accounts = {}  # Dictionary to store accounts
+        self.accounts = {} 
 
     def create_account(self, account_number, pin):
         if account_number in self.accounts:
@@ -102,6 +102,6 @@ class ATM:
             else:
                 print("Invalid choice. Please try again.")
 
-if __name__ == "__main__":  # Corrected this line
+if __name__ == "__main__":  
     atm = ATM()
     atm.start()
